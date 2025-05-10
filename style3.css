@@ -1,0 +1,193 @@
+
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f9f3e5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(90deg, #ff7b00, #ff006a, #8000ff, #00c3ff);
+        }
+        
+        h1 {
+            color: #ff5722;
+            margin-top: 20px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .joke-container {
+            margin: 30px 0;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            line-height: 1.6;
+            padding: 20px;
+            border: 3px dashed #ffc107;
+            border-radius: 15px;
+            background-color: #fffdf7;
+        }
+        
+        .joke-text {
+            width: 100%;
+            margin: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .joke-setup {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .joke-delivery {
+            font-style: italic;
+            color: #ff5722;
+        }
+        
+        .single-joke {
+            font-weight: 600;
+        }
+        
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        button {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        
+        button:hover {
+            transform: translateY(-3px) scale(1.05);
+            background-color: #e64a19;
+        }
+        
+        button:active {
+            transform: translateY(1px);
+        }
+        
+        .joke-type {
+            background-color: #4CAF50;
+        }
+        
+        .pun-type {
+            background-color: #2196F3;
+        }
+        
+        .dark-type {
+            background-color: #673AB7;
+        }
+        
+        .emoji {
+            font-size: 1.5rem;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        
+        .loading {
+            display: none;
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #ff5722;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .rating button {
+            background-color: transparent;
+            color: #ccc;
+            font-size: 2rem;
+            padding: 5px 10px;
+            margin: 0 5px;
+            box-shadow: none;
+        }
+        
+        .rating button:hover {
+            color: #ffc107;
+        }
+        
+        .rating button.active {
+            color: #ffc107;
+        }
+        
+        .joke-count {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .joke-container {
+                font-size: 1.1rem;
+                min-height: 120px;
+            }
+            
+            button {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+ 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎭 Random Joke Generator 🎪</h1>
+        
+        <div class="buttons">
+            <button id="getJoke" class="any-type"><span class="emoji">😂</span>Random Joke</button>
+            <button id="getPun" class="pun-type"><span class="emoji">🤓</span>Get a Pun</button>
+            <button id="getProgrammingJoke" class="joke-type"><span class="emoji">💻</span>Programming</button>
+            <button id="getDadJoke" class="dark-type"><span class="emoji">👨</span>Dad Joke</button>
+        </div>
+        
+        <div class="joke-container">
+            <p class="joke-text">Click a button to get a joke!</p>
+        </div>
+        
+        <div class="loading" id="loading"></div>
+        
+        <div class="rating">
+            <button class="rating-btn" data-rating="1">😞</button>
+            <button class="rating-btn" data-rating="2">😐</button>
+            <button class="rating-btn" data-rating="3">🙂</button>
+            <button class="rating-btn" data-rating="4">😄</button>
+            <button class="rating-btn" data-rating="5">🤣</button>
+        </div>
+        
+        <p class="joke-count">Jokes fetched: <span id="count">0</span></p>
+        
+        <p class="footer">Data from JokeAPI, icanhazdadjoke, and other public APIs</p>
+    </div>
+
+   <script src="script3.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Quiz</title>
+   <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Web Development (HTML/CSS/JS) Knowledge Quiz</h1>
+        
+        <div id="quiz">
+            <div class="progress">
+                <span id="current-question">Question 1 of 5</span>
+                <span id="timer">Time: 00:00</span>
+            </div>
+            
+            <div id="question-container">
+                <div class="question" id="question-text"></div>
+                <div class="options" id="options-container"></div>
+            </div>
+            
+            <div class="feedback" id="feedback"></div>
+            
+            <div class="controls">
+                <button id="prev-btn" disabled>Previous</button>
+                <button id="next-btn" disabled>Next</button>
+            </div>
+        </div>
+        
+        <div id="result" class="result-container hidden">
+            <h2>Quiz Completed!</h2>
+            <div class="score" id="score-text"></div>
+            <div id="time-taken"></div>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+        
+   
+</body>
+</html>
